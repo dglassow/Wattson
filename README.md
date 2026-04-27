@@ -1,8 +1,8 @@
 # Wattson
 
-Wattson is a private SwiftUI iPhone and iPad app for the Glassow household.
+Wattson is a SwiftUI iPhone and iPad app for the Glassow household.
 
-It keeps the day visible with a shared schedule, chores, bulletin notes, and a meal plan. The first version stores household data locally on-device.
+It keeps the day visible with a 5-day weather forecast, calendar, chores, grocery list, household budget, bulletin notes, and a meal plan. The first version stores household data locally on-device.
 
 ## Open
 
