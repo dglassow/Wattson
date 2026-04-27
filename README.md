@@ -16,4 +16,10 @@ The project is configured for automatic signing with this bundle identifier:
 com.glassow.wattson
 ```
 
-In Xcode, select the Wattson target, choose your Apple Developer team under **Signing & Capabilities**, then build for iPhone or iPad.
+The Xcode target is configured with Apple Developer Team ID:
+
+```text
+Z6ATGC7GNB
+```
+
+In Xcode, select the Wattson target and confirm the team under **Signing & Capabilities**, then build for iPhone or iPad.
