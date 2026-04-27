@@ -27,6 +27,28 @@ Encryption: No non-exempt encryption
 9. After processing finishes in App Store Connect, open **TestFlight** and add yourself as an internal tester.
 10. Install TestFlight on your iPhone and accept the invite.
 
+## TestFlight Without USB
+
+Without USB, do not use Xcode's development signing flow. It requires a registered iPhone or iPad.
+
+Instead, create an App Store distribution profile:
+
+1. Go to `developer.apple.com/account`.
+2. Open **Certificates, Identifiers & Profiles**.
+3. Create or confirm this App ID:
+   - Platform: iOS
+   - Bundle ID: `com.glassow.wattson`
+4. Create an **Apple Distribution** certificate if one does not exist.
+5. Create a new provisioning profile:
+   - Type: **App Store**
+   - App ID: `com.glassow.wattson`
+   - Certificate: your Apple Distribution certificate
+   - Profile Name: `Wattson App Store`
+6. Download the profile and double-click it to install in Xcode.
+7. In Xcode, select **Any iOS Device** and choose **Product > Archive**.
+
+The Release configuration is set to manual signing with provisioning profile `Wattson App Store`.
+
 ## Fix Signing Profiles
 
 If Xcode says no provisioning profiles were found for `com.glassow.wattson`:
